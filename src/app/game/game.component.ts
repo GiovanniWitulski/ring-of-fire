@@ -27,12 +27,10 @@ import { MatCardModule } from '@angular/material/card';
 export class GameComponent {
   drawCardAnimation = false;
   currentCard: string = '';
-  game = inject(GameService)
+  game = inject(GameService);
 
   constructor(public dialog: MatDialog) {
     console.log(this.game);
-    
-
   }
 
   drawCard() {
@@ -62,3 +60,4 @@ export class GameComponent {
   }
 }
 
+// firebaseID = ring-of-fire-20172
